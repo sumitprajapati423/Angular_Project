@@ -1,0 +1,24 @@
+
+
+<form action="https://formspree.io/f/myyqlzvv"
+method="POST">
+    <h2>{{title}}</h2>
+    <div>
+      <select #userprofile>
+        <option value="Admin">Admin</option>
+        <option value="user">User</option>
+      </select>
+    </div>
+    <br>
+    <div class="int">
+        <label for="na">Name</label><br>
+        <!-- template Referance variable -> id   -->
+        <input type="text" name="Name" id="na" placeholder="" #nm>
+    </div>
+    <div class="int">
+        <label for="pass">Password</label><br>
+        <input type="password" name="pass" placeholder="" #pass>
+    </div><br>
+    <!-- Event Binding Method -->
+    <button class="btn btn-outline-primary" (click)="login(userprofile.value ,nm.value, pass.value)">sing In</button>
+</form>

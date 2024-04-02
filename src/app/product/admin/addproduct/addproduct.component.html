@@ -1,0 +1,32 @@
+
+<div class="center">
+        <form [formGroup]="reactiveFormData" (ngSubmit)="submitfunction()">
+        <div class="input1">
+          <label >id</label>
+          <input type="number" placeholder="Id" formControlName="id">
+        </div><br>
+        <div class="input2">
+          <label>titel</label>
+          <input type="text" placeholder="title" formControlName="title">
+        </div><br>
+        <div class="input3">
+          <label>price</label>
+          <input type="text" placeholder="price" formControlName="price">
+        </div><br>
+        <div class="">
+          <label>category</label>
+          <input type="text" placeholder="category" formControlName="category">
+        </div><br>
+        <div class="input5">
+          <label for="imgsrc">image</label>
+          <img [src]="imgPath" alt="" width="100px" height="100px">
+          <input type="file" id="imgsrc" (change)="changeImg($event)">
+        </div>
+        <br>
+        <div class="input6">
+          <label>rating</label>
+          <input type="number" placeholder="rating" formControlName="rating">
+        </div><br>
+        <button>Add Product</button>
+        </form>
+</div>

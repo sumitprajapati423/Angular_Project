@@ -1,0 +1,11 @@
+.center
+{
+  margin-left: 350px;
+}
+form{
+
+  text-align: center;
+  border: 1px solid rgb(50, 200, 13);
+  width: 400px;
+  padding: 5px;
+}

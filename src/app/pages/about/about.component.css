@@ -1,0 +1,53 @@
+
+h1{
+    font-weight: bold;
+}
+
+.main .image{
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .heading{
+  display: flex;
+  justify-content: space-evenly;
+}
+p{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.main .heading #a {
+  margin-right: 100px;
+}
+.main .heading #b {
+margin-right: 100px;
+}
+
+li{
+  font-size: 15px;
+  padding: 15px;
+}
+
+.child{
+  margin-left: 400px;
+}
+
+.type p {
+     font-size: 17px;
+}
+.type-image{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cen h2{
+  display: flex;
+}
+
+.cen{
+  /* margin-left: 350px; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+ .sec img {
+  justify-content: space-evenly;
+}

@@ -1,0 +1,29 @@
+<div class="arrow"><i class='bx bxs-chevrons-right'></i>
+<button (click)="addProduct()" class="btn btn-primary p-2 m-4">Add Product</button>
+</div>
+<div class="dashboard">
+    <table class="table w-75 m-auto" >
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Image</th>
+          <th scope="col">Title</th>
+          <th scope="col">Price</th>
+          <th scope="col">Rating</th>
+          <th scope="col" colspan="2">UpDate</th>
+          <th scope="col" colspan="2">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of productdata">
+          <th scope="row">{{data.id}}</th>
+          <td><img [src]="data.image" width="70px" height="70px" alt=""></td>
+          <td>{{data.title}}</td>
+          <td>{{data.price}}</td>
+          <td>{{data.rating}}</td>
+          <td  (click)="updateProduct (data.id)"><i class="fa-solid fa-pen "></i></td>&nbsp;&nbsp;&nbsp;
+          <td  (click)="deleteProdFun(data.id)"><i class="fa-solid fa-trash alert-danger"></i></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

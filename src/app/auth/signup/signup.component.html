@@ -1,0 +1,24 @@
+
+
+<div >
+  <h2>{{title}}</h2>
+  <div class="int">
+      <label for="na">Name</label><br>
+      <input type="text" id="na" placeholder="" #Name>
+  </div>
+  <div class="int">
+      <label for="em">Email</label><br>
+      <input type="email" id="em" placeholder="Email id " #Mail>
+  </div>
+  <div class="int">
+      <label for="num">Number</label><br>
+      <input type="number" id="num" placeholder="number" #Mo>
+  </div>
+  <div class="int">
+      <label for="add">Address</label><br>
+      <textarea name="em" id="add" cols="24" rows="2" placeholder="Address" #address></textarea>
+  </div>
+  <br>
+
+  <button class="btn btn-outline-primary" (click)="submitFun(Name.value , Mail.value , Mo.value , address.value)">sing up</button>
+</div>

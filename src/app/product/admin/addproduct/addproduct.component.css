@@ -1,0 +1,10 @@
+.center{
+  margin-left: 350px;
+}
+
+form{
+  text-align: center;
+  border: 1px solid black;
+  width: 400px;
+  padding: 5px;
+}

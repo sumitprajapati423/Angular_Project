@@ -1,0 +1,48 @@
+
+
+<div >
+  <form class="d-flex py-2 " #search="ngForm">
+    <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search" ngModel>
+    <button class="btn btn-outline-success" type="submit" (click)="search_data(search)">Search here</button>
+  </form>
+</div>
+
+
+<div class="d-flex flex-wrap justify-content-evenly">
+    <mat-card class="example-card m-2" *ngFor="let product of productdata">
+      <div (click)="showproduct('product',product.id)">
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+          <mat-card-subtitle>{{product.category}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="product.image" alt="" width="80%" height="220px">
+        <mat-card-content>
+          <p>
+            Price: <span id="cc">{{product.price}} </span>
+          </p>
+          <p>
+            Rating: {{product.rating}}
+          </p>
+        </mat-card-content>
+      </div>
+      <mat-card-actions  class="d-flex w-100 justify-content-evenly" >
+        <button  mat-raised-button color="accent" >LIKE</button>
+        <button mat-raised-button color="primary" (click)="addtoCart(product)">Add to cart</button>
+      </mat-card-actions>
+    </mat-card>
+
+</div>
+
+
+<!-- <ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner> -->
+
+
+
+

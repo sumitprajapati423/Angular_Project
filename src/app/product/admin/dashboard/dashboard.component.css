@@ -1,0 +1,16 @@
+button{
+  /* right: auto; */
+  float: right;
+}
+
+.dashboard{
+  margin-top: 30px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.arrow i{
+  font-size: 30px;
+  margin-top: 28px;
+  margin-left: 1050px;
+}

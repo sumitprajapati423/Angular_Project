@@ -1,0 +1,24 @@
+
+<div class="center">
+      <div class="card mb-auto my-4 w-75" style="max-width: 540px;" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="productdata.image" class="img-fluid rounded-start" alt="..." height="200px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">{{productdata.title}}</h3>
+              <h5 class="card-title">{{productdata.category}}</h5>
+              <p class="card-text">{{productdata.descripation}}</p>
+              <p class="card-text">{{productdata.price}}</p>
+              <div class="d-flex">
+                <p class="cart-text me-4">Rating: {{productdata.rating.rate}}</p>
+              </div>
+              <div (click)="showproduct('product',product.id)">
+              <a href="#" class="btn btn-primary" (click)="addtoCart(productdata)">Add to Cart</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
